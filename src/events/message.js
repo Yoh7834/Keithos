@@ -95,7 +95,7 @@ module.exports = (client, message) => {
         .setThumbnail('https://github.com/Yoh7834/Keithos/raw/main/data/images/icon.jpg')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         
-        .addField('Support', oneLine`If you have questions, suggestions, or found a bug, please  DM MCorange#0001 to speak directly with the developer!`)
+        .addField('Support', oneLine`If you have questions, suggestions, or found a bug, please  DM MCorange#4829 to speak directly with the developer!`)
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
     }} else {
