@@ -8,7 +8,7 @@ const port = 3912;
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
-app.listen(port, () => console.log(`Keithos listening at http://localhost:${port}`));
+app.listen(port, () => console.log(`𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot listening at http://localhost:${port}`));
 
 global.__basedir = __dirname;
 

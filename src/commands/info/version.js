@@ -9,7 +9,7 @@ module.exports = class version extends Command {
       name: 'version', //command name
       usage: 'version',
       aliases: ['ver'], //usage for the command, example: ping (prepends prefix in the help command btw)
-      description: 'Gives the current keithos version number', //description for it
+      description: 'Gives the current 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot version number', //description for it
       type: client.types.INFO //can be any available types, look in this.types in client.js file
     });
   }
@@ -24,7 +24,7 @@ fs.readFile('package.json', 'utf8', (err, jsonString) => {
         const embed = new MessageEmbed()
         const pack = JSON.parse(jsonString)
         const ver = pack.version
-        embed.setTitle('Keithos Version')
+        embed.setTitle('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot Version')
         .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
         .addField('Version is:', `\`${ver}\``, true)
         .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

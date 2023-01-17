@@ -6,7 +6,7 @@ module.exports = class BlastCommand extends Command {
     super(client, {
       name: 'blast',
       usage: 'blast <message>',
-      description: 'Sends a message to every server that Keithos is in that has a system channel.',
+      description: 'Sends a message to every server that 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot is in that has a system channel.',
       type: client.types.OWNER,
       ownerOnly: true,
       examples: ['blast Hello World!']
@@ -25,8 +25,8 @@ module.exports = class BlastCommand extends Command {
         systemChannel.permissionsFor(guild.me).has(['SEND_MESSAGES', 'EMBED_LINKS'])
       ) {
         const embed = new MessageEmbed()
-          .setTitle('Keithos System Message')
-          .setThumbnail('https://raw.github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
+          .setTitle('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot System Message')
+          .setThumbnail('https://github.com/Yoh7834/Keithos/raw/main/data/images/icon.jpg')
           .setDescription(msg)
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);

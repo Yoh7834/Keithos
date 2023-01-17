@@ -11,7 +11,7 @@ module.exports = class SetCrownScheduleCommand extends Command {
       aliases: ['setcs', 'scs'],
       usage: 'setcrownschedule <cron>',
       description: stripIndent`
-        Sets the schedule for Keithos crown role rotation. 
+        Sets the schedule for 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot crown role rotation. 
         The format is cron-style:
         \`\`\`*    *    *    *    *
         ┬    ┬    ┬    ┬    ┬

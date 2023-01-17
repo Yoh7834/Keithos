@@ -8,7 +8,7 @@ module.exports = class UptimeCommand extends Command {
       name: 'uptime',
       aliases: ['up'],
       usage: 'uptime',
-      description: 'Fetches Keithos\'s current uptime.',
+      description: 'Fetches 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot\'s current uptime.',
       type: client.types.INFO
     });
   }
@@ -20,7 +20,7 @@ module.exports = class UptimeCommand extends Command {
     const seconds = (d.seconds() == 1) ? `${d.seconds()} second` : `${d.seconds()} seconds`;
     const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
     const embed = new MessageEmbed()
-      .setTitle('Keithos Uptime')
+      .setTitle('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot Uptime')
       .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
       .addField('Date Launched', date) 

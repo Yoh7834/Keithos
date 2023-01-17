@@ -10,7 +10,7 @@ module.exports = class SetAutoKickCommand extends Command {
       aliases: ['setak', 'sak'],
       usage: 'setautokick <warn count>',
       description: oneLine`
-        Sets the amount of warns needed before Keithos will automatically kick someone from your server.
+        Sets the amount of warns needed before 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot will automatically kick someone from your server.
         Provide no warn count or a warn count of 0 to disable \`auto kick\`.
       `,
       type: client.types.ADMIN,

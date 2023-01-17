@@ -84,7 +84,7 @@ module.exports = class HelpCommand extends Command {
       const size = message.client.commands.size - commands[OWNER].length;
 
       embed // Build help embed
-        .setTitle('Keithos Commands')
+        .setTitle('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot Commands')
         .setDescription(stripIndent`
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}help [command]\`
@@ -104,13 +104,6 @@ module.exports = class HelpCommand extends Command {
           embed.addField(`**${emojiMap[type]} [${commands[type].length}]**`, commands[type].join(' '));
       }
 
-      embed.addField(
-        '**Links**', 
-        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=261993005047&scope=bot%20applications.commands) | ' +
-        '[Support Server](https://discord.gg/M7nDZxKk24) | ' +
-        '[Repository](https://github.com/KeithosTeam/Keithos)**'
-      );
-        
     }
     message.channel.send(embed);
   }

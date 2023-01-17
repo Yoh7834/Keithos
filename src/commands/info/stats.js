@@ -35,7 +35,7 @@ module.exports = class StatsCommand extends Command {
       RAM Usage :: ${usedMemMb} MB 
     `;
     const embed = new MessageEmbed()
-      .setTitle('Keithos Statistics')
+      .setTitle('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot Statistics')
       .addField('Commands', `\`${message.client.commands.size}\` commands`, true)
       .addField('Aliases', `\`${message.client.aliases.size}\` aliases`, true)
       .addField('Command Types', `\`${Object.keys(message.client.types).length}\` command types`, true)

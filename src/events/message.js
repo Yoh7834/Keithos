@@ -91,18 +91,11 @@ module.exports = (client, message) => {
       !modChannelIds.includes(message.channel.id)
     ) {
       const embed = new MessageEmbed()
-      .setTitle('Hi, I\'m Keithos. Need help?')
-        .setThumbnail('https://raw.github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
+      .setTitle('Hi, I\'m 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot. Need help?')
+        .setThumbnail('https://github.com/Yoh7834/Keithos/raw/main/data/images/icon.jpg')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
-        .addField('Invite Me', oneLine`
-          You can add me to your server by clicking 
-          [here](https://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=4294967287&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot%20applications.commands)!
-        `)
-        .addField('Support', oneLine`
-          If you have questions, suggestions, or found a bug, please join the 
-          [Keithos Support Server](https://discord.gg/M7nDZxKk24)!
-        `)
-        .setFooter('DM MCorange#0001 to speak directly with the developer!')
+        
+        .addField('Support', oneLine`If you have questions, suggestions, or found a bug, please  DM MCorange#0001 to speak directly with the developer!`)
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
     }} else {

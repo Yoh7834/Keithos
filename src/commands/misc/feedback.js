@@ -8,9 +8,9 @@ module.exports = class FeedbackCommand extends Command {
       name: 'feedback',
       aliases: ['fb'],
       usage: 'feedback <message>',
-      description: 'Sends a message to the Keithos Support Server\'s feedback channel.',
+      description: 'Sends a message to the 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot Support Server\'s feedback channel.',
       type: client.types.MISC,
-      examples: ['feedback We love Keithos!'],
+      examples: ['feedback We love 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot!'],
       toggleCooldown: true,
       cooldown: 15
     });

@@ -11,7 +11,7 @@ module.exports = class CreateDefaultColorsCommand extends Command {
       aliases: ['cdc'],
       usage: 'createdefaultcolors',
       description: oneLine`
-        Generates the ${len} default color roles that come with packaged with Keithos on your server. 
+        Generates the ${len} default color roles that come with packaged with 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot on your server. 
         Color roles are denoted by the prefix \`#\`.
       `,
       type: client.types.COLOR,

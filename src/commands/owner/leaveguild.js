@@ -8,7 +8,7 @@ module.exports = class LeaveGuildCommand extends Command {
     super(client, {
       name: 'leaveguild',
       usage: 'leaveguild <server ID>',
-      description: 'Forces Keithos to leave the specified server.',
+      description: 'Forces 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot to leave the specified server.',
       type: client.types.OWNER,
       ownerOnly: true,
       examples: ['leaveguild 709992782252474429']

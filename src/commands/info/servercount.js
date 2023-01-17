@@ -18,7 +18,7 @@ module.exports = class ServerCountCommand extends Command {
       Users   :: ${message.client.users.cache.size}
     `;
     const embed = new MessageEmbed()
-      .setTitle('Keithos Server Count')
+      .setTitle('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot Server Count')
       .setDescription(stripIndent`\`\`\`asciidoc\n${counts}\`\`\``)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

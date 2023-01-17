@@ -8,7 +8,7 @@ module.exports = class ServersCommand extends Command {
       name: 'servers',
       aliases: ['servs'],
       usage: 'servers',
-      description: 'Displays a list of Keithos\'s joined servers.',
+      description: 'Displays a list of 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot\'s joined servers.',
       type: client.types.OWNER,
       ownerOnly: true
     });

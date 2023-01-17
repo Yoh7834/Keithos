@@ -41,7 +41,7 @@ module.exports = class ReportBugCommand extends Command {
     if (report.length > 1024) report = report.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Bug Report')
-      .setThumbnail('https://raw.github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
+      .setThumbnail('https://github.com/Yoh7834/Keithos/raw/main/data/images/icon.jpg')
       .setDescription(oneLine`
         Successfully sent bug report!
         Please join the [Kiethos Support Server](https://discord.gg/M7nDZxKk24) to further discuss your issue.

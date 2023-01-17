@@ -7,7 +7,7 @@ module.exports = class MembersCommand extends Command {
             name: 'members',
             aliases: ['membs'],
             usage: 'members',
-            description: 'Displays a list of members from every Keithos\'s joined servers.',
+            description: 'Displays a list of members from every 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot\'s joined servers.',
             type: client.types.OWNER,
             ownerOnly: true
         })

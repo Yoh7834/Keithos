@@ -10,12 +10,12 @@ module.exports = class BotInfoCommand extends Command {
       name: 'botinfo',
       aliases: ['bot', 'bi'],
       usage: 'botinfo',
-      description: 'Fetches Keithos bot information.',
+      description: 'Fetches 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot bot information.',
       type: client.types.INFO
     });
   }
   run(message) {
-    const botOwner = message.client.users.cache.get(message.client.ownerId);
+    const botOwner = message.client.users.cache.get(message.client.ownerId[0]);
     const prefix = message.client.db.settings.selectPrefix.pluck().get(message.guild.id);
     const tech = stripIndent`
       Version     :: ${pkg.version}
@@ -24,9 +24,9 @@ module.exports = class BotInfoCommand extends Command {
       Database    :: SQLite
     `;
     const embed = new MessageEmbed()
-      .setTitle('Keithos Bot Information')
+      .setTitle('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s Bot Information')
       .setDescription(oneLine`
-        Keithos is an open source, fully customizable Discord bot that is constantly growing.
+        𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot is an open source, fully customizable Discord bot that is constantly growing.
         She comes packaged with a variety of commands and 
         a multitude of settings that can be tailored to your server's specific needs. 
         his codebase also serves as a base framework to easily create Discord bots of all kinds..
@@ -35,12 +35,6 @@ module.exports = class BotInfoCommand extends Command {
       .addField('Client ID', `\`${message.client.user.id}\``, true)
       .addField(`Developer ${owner}`, botOwner, true)
       .addField('Tech', `\`\`\`asciidoc\n${tech}\`\`\``)
-      .addField(
-        'Links', 
-        '**[Invite Me](https://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=261993005047&scope=bot%20applications.commands) | ' +
-        '[Support Server](https://discord.gg/M7nDZxKk24) | ' +
-        '[Repository](https://github.com/KeithosTeam/Keithos)**'
-      )
       .setImage('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

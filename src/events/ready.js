@@ -2,7 +2,7 @@ module.exports = async (client) => {
   
   const activities = [
     { name: 'your commands', type: 'LISTENING' }, 
-    { name: '@keithos', type: 'LISTENING' }
+    { name: '@𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot', type: 'LISTENING' }
   ];
 
   // Update presence
@@ -116,9 +116,9 @@ module.exports = async (client) => {
     client.db.settings.deleteGuild.run(guild.guild_id);
     client.db.users.deleteGuild.run(guild.guild_id);
 
-    client.logger.info(`Keithos has left ${guild.guild_name}`);
+    client.logger.info(`𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot has left ${guild.guild_name}`);
   }
 
-  client.logger.info('Keithos is now online');
-  client.logger.info(`Keithos is running on ${client.guilds.cache.size} server(s)`);
+  client.logger.info('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot is now online');
+  client.logger.info(`𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot is running on ${client.guilds.cache.size} server(s)`);
 };

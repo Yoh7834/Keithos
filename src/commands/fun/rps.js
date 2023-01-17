@@ -8,7 +8,7 @@ module.exports = class RockPaperScissorsCommand extends Command {
     super(client, {
       name: 'rps',
       usage: 'rps <rock | paper | scissors>',
-      description: 'Play a game of rock–paper–scissors against Keithos!',
+      description: 'Play a game of rock–paper–scissors against 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot!',
       type: client.types.FUN,
       examples: ['rps rock']
     });
@@ -22,12 +22,12 @@ module.exports = class RockPaperScissorsCommand extends Command {
     const botChoice = Math.floor(Math.random()*3);
     let result;
     if (userChoice === botChoice) result = 'It\'s a draw!';
-    else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**Keithos** wins!';
+    else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot** wins!';
     else result = `**${message.member.displayName}** wins!`;
     const embed = new MessageEmbed()
-      .setTitle(`${message.member.displayName} vs. Keithos`)
+      .setTitle(`${message.member.displayName} vs. 𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot`)
       .addField('Your Choice:', res[userChoice], true)
-      .addField('Keithos\'s Choice', res[botChoice], true)
+      .addField('𝓒𝓱𝓪𝔃𝓾𝓴𝓲\'s bot\'s Choice', res[botChoice], true)
       .addField('Result', result, true)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
